@@ -6,7 +6,7 @@
 	const { name } = $props<Props>();
 </script>
 
-<div class="card glass w-96">
+<div class="card glass w-full">
 	<figure>
 		<img
 			src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
