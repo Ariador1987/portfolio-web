@@ -1,7 +1,8 @@
 <script>
-	import { Header } from "$lib/components";
+	import { Head, Header } from "$components";
 	import "../app.pcss";
 </script>
 
+<Head />
 <Header />
 <slot />

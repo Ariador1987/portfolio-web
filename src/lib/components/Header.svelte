@@ -4,7 +4,7 @@
 
 <div class="navbar bg-base-100">
 	<div class="flex-1">
-		<a class="btn btn-ghost text-xl">daisyUI</a>
+		<a class="btn btn-ghost text-xl" href="/"><h1>Photo Teo</h1></a>
 	</div>
 	<div class="flex-none">
 		<ul class="menu menu-horizontal items-center px-1">
