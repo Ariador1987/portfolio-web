@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { page } from "$app/stores";
+</script>
+
 <svelte:head>
-	<title>Photo Teo</title>
+	<title>{$page?.data?.title ?? "Photo Teo"}</title>
 </svelte:head>
