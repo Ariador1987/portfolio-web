@@ -1,21 +1,17 @@
 <script lang="ts">
-	type Props = {
-		name: string;
-	};
+	import type { Pet } from "$lib/repos/pets/PetsRepoInterface";
 
-	const { name } = $props<Props>();
+	const { name, heroImage } = $props<Pet>();
+	const { src, alt } = heroImage;
 </script>
 
-<div class="card glass w-full">
-	<figure>
-		<img
-			src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-			alt="car!"
-		/>
+<div class="card glass size-full">
+	<figure class="max-h-60">
+		<img src={src || ""} alt={alt || ""} />
 	</figure>
 	<div class="card-body">
 		<h2 class="card-title">{name}</h2>
-		<p>How to park your car at your garage?</p>
+		<p class="flex-grow">How to park your car at your garage?</p>
 		<div class="card-actions justify-end">
 			<button class="btn btn-primary">Learn now!</button>
 		</div>

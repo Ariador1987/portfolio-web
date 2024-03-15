@@ -1,6 +1,6 @@
 <script lang="ts">
 	import "../app.pcss";
-	import { Head, Header } from "$components";
+	import { Footer, Head, Header } from "$components";
 	import type { Snippet } from "svelte";
 
 	type Props = {
@@ -11,6 +11,7 @@
 </script>
 
 <Head />
+
 <Header />
-<!-- <slot /> -->
 {@render children()}
+<Footer />

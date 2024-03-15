@@ -8,7 +8,7 @@ test("navigation smoke test", async ({ page }) => {
 
 	// Navigate to 'Contact' page
 	// const contactPage = await page.getByRole("link", { name: "Contact" });
-	await page.getByText("Contact").click();
+	await page.getByRole("link", { name: "Contact" }).click();
 
 	await expect(page).toHaveTitle("Contact Page");
 	await expect(

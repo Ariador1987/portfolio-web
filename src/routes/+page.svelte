@@ -1,13 +1,8 @@
 <script lang="ts">
 	import { Hero, Pets } from "$lib/components";
 
-	const pets = [
-		{ name: "Mary" },
-		{ name: "Jane" },
-		{ name: "Joseph" },
-		{ name: "Mary" },
-		{ name: "Garfield" },
-	];
+	const { data } = $props();
+	const { pets } = data;
 </script>
 
 <Hero />
