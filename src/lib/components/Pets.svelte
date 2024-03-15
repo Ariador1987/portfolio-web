@@ -13,9 +13,9 @@
 	<h2 class="mb-6 text-4xl">Highligted pets</h2>
 	<ul class="grid items-center justify-center gap-8 md:grid-cols-2 lg:grid-cols-3">
 		{#each pets as pet}
-			{@const { name, heroImage } = pet}
+			{@const { name, heroImage, favoriteActivity } = pet}
 			<li class="size-full">
-				<PetCard {name} {heroImage} />
+				<PetCard {name} {heroImage} {favoriteActivity} />
 			</li>
 		{/each}
 	</ul>

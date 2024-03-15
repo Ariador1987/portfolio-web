@@ -1,4 +1,4 @@
-<footer class="footer bg-base-200 p-10 text-base-content">
+<footer class="footer mt-[5svh] bg-base-200 p-10 text-base-content">
 	<aside>
 		<svg
 			width="50"
