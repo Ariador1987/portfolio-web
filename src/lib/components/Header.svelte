@@ -2,11 +2,11 @@
 	import { ThemeToggleIcon } from ".";
 </script>
 
-<div class="navbar bg-base-100">
+<header class="navbar sticky top-0 z-30 bg-base-100 bg-base-100/50 backdrop-blur">
 	<div class="flex-1">
 		<a class="btn btn-ghost text-xl" href="/"><h1>Photo Teo</h1></a>
 	</div>
-	<div class="flex-none">
+	<nav class="flex-none">
 		<ul class="menu menu-horizontal items-center px-1">
 			<li><a href="/">Home</a></li>
 			<li><a href="/contact">Contact</a></li>
@@ -17,5 +17,11 @@
 				</button>
 			</li>
 		</ul>
-	</div>
-</div>
+	</nav>
+</header>
+
+<style lang="postcss">
+	.navbar {
+		view-transition-name: main-nav;
+	}
+</style>

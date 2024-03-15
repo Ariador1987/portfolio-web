@@ -4,6 +4,9 @@ declare global {
 	interface Window {
 		toggleTheme?(): void;
 	}
+	interface Document {
+		startViewTransition?(callback: () => Promise<void>): void;
+	}
 
 	namespace App {
 		// interface Error {}
