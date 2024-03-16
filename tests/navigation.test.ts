@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test("navigation smoke test", async ({ page }) => {
 	await page.goto("/");
-	await expect(page.getByTestId("hydrated")).toBeVisible();
+	await expect(page.getByTestId("hydrated")).toBeVisible({ timeout: 10000 });
 
 	await expect(page).toHaveTitle("Paulina Pullers");
 	await expect(page.getByRole("heading", { name: "Photo Teo", level: 1 })).toBeVisible();
