@@ -1,4 +1,8 @@
 import type { Pet, PetsRepo } from "./PetsRepoInterface";
+import bazaSlika from "$lib/repos/pets/images/macka-PT-HD.jpg?enhanced";
+import mamaBeba from "./images/bebaMamaTataRuke-LD.jpg?enhanced";
+import doggo from "./images/doggo-PT.jpg?enhanced";
+import vjencanje from "./images/vjencanje-5add-OTO-HD.jpg?enhanced";
 
 class PetsInMemoryRepo implements PetsRepo {
 	#pets: Pet[] = [
@@ -6,7 +10,7 @@ class PetsInMemoryRepo implements PetsRepo {
 			name: "Mary",
 			favoriteActivity: "Running around and barking",
 			heroImage: {
-				src: "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg",
+				src: bazaSlika,
 				alt: "Mary",
 			},
 		},
@@ -14,7 +18,7 @@ class PetsInMemoryRepo implements PetsRepo {
 			name: "Jane",
 			favoriteActivity: "Running around and Panting",
 			heroImage: {
-				src: "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				src: mamaBeba,
 				alt: "Jane being a chimpanzee",
 			},
 		},
@@ -22,7 +26,7 @@ class PetsInMemoryRepo implements PetsRepo {
 			name: "Joseph",
 			favoriteActivity: "Whaling around and barking",
 			heroImage: {
-				src: "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg",
+				src: doggo,
 				alt: "Joseph being cute",
 			},
 		},
@@ -30,16 +34,8 @@ class PetsInMemoryRepo implements PetsRepo {
 			name: "Mark",
 			favoriteActivity: "Screaming around and barking",
 			heroImage: {
-				src: "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				src: vjencanje,
 				alt: "Mark being awesome",
-			},
-		},
-		{
-			name: "Garfield",
-			favoriteActivity: "Crying around and barking",
-			heroImage: {
-				src: "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg",
-				alt: "Garfield playing around as usual",
 			},
 		},
 	];

@@ -6,9 +6,11 @@
 </script>
 
 <div class="card glass size-full">
-	<figure class="max-h-60">
-		<img src={src || ""} alt={alt || ""} />
-	</figure>
+	{#if src}
+		<figure>
+			<enhanced:img {src} {alt} class="block max-h-full max-w-full object-cover" />
+		</figure>
+	{/if}
 	<div class="card-body">
 		<h2 class="card-title">{name}</h2>
 		<p class="flex-grow">{favoriteActivity}</p>

@@ -8,6 +8,8 @@ declare global {
 		startViewTransition?(callback: () => Promise<void>): void;
 	}
 
+	declare module "*&enhanced";
+
 	namespace App {
 		// interface Error {}
 		// interface Locals {}
