@@ -1,3 +1,4 @@
+@import "@fontsource-variable/shantell-sans";
 @import "open-props/easings";
 @import "open-props/shadows";
 
@@ -48,6 +49,10 @@
 	h5,
 	h6 {
 		text-wrap: balance;
+
+		&:not(h1) {
+			@apply font-fancy;
+		}
 	}
 
 	p {
@@ -60,7 +65,7 @@
 
 	:root {
 		--font-sans: system-ui, sans-serif;
-		--font-fancy: "Shantell Sans Variable";
+		--font-fancy: "Shantell Sans Variable", system-ui, serif;
 		--padding-inline: clamp(1rem, 5vw, 3rem);
 		--radius: 1rem;
 

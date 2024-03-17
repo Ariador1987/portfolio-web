@@ -1,6 +1,7 @@
 <script lang="ts">
+	import { PageTitle } from "$components";
 </script>
 
 <main class="container">
-	<h2 class="text-4xl font-bold">Find me on socials</h2>
+	<PageTitle>Find me on socials</PageTitle>
 </main>
