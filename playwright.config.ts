@@ -75,9 +75,11 @@ export default defineConfig({
 	],
 
 	/* Run your local dev server before starting the tests */
-	webServer: {
-		command: "pnpm run dev",
-		url: "http://localhost:5173",
-		reuseExistingServer: true || !process.env.CI,
-	},
+	webServer: !process.env.PUBLIC_ROOT_URL
+		? {
+				command: "pnpm run dev",
+				port: 5173,
+				reuseExistingServer: true,
+			}
+		: undefined,
 });
